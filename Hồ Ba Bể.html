@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #007ACC, #00C9FF);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            color: #007ACC;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-left: 270px; /* Đẩy dòng chữ sang phải để không bị che */
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: rgba(0, 0, 0, 0.9);
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #fff;
+            padding: 15px 30px;
+            display: block;
+            transition: background 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background: #007acc;
+            transform: translateX(10px);
+        }
+        main {
+            margin-left: 270px;
+            padding: 20px;
+            padding-bottom: 100px
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            font-size: 2.5em;
+            color: #007acc;
+        }
+        p, ul li {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+        }
+        img {
+            width: 85%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+        video {
+            width: 85%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Chào mừng đến với Hồ Ba Bể - Bắc Kạn
+    </header>
+    <nav>
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#dacdiem">Đặc điểm nổi bật</a>
+        <a href="#hoatdong">Hoạt động du lịch</a>
+        <a href="#huongdan">Hướng dẫn tham quan</a>
+        <a href="#video">Video giới thiệu</a>
+        <a href="#lienhe">Liên hệ</a>
+    </nav>
+    <main>
+        <section id="gioithieu">
+            <h2>Giới thiệu chung</h2>
+            <p>Hồ Ba Bể nằm trong Vườn Quốc gia Ba Bể, thuộc tỉnh Bắc Kạn. Đây là một trong những hồ nước ngọt tự nhiên lớn nhất Việt Nam, hình thành cách đây hơn 200 triệu năm. Hồ được bao quanh bởi những dãy núi đá vôi, rừng nguyên sinh và nhiều hang động kỳ bí, tạo nên một phong cảnh thiên nhiên thơ mộng, huyền ảo.</p>
+            <img src="https://dulichhobabe.com/UserFiles/image/Mien%20Bac/Ba%20Be/Nguoivietdulichviet_hobabe.jpg" alt="Khung cảnh Hồ Ba Bể" alt="Khung cảnh Hồ Ba Bể">
+        </section>
+        <section id="dacdiem">
+            <h2>Đặc điểm nổi bật</h2>
+            <ul>
+                <li>Hồ có diện tích khoảng 500 ha, dài hơn 8 km và sâu trung bình 20 - 25 m.</li>
+                <li>Hệ động thực vật phong phú với hơn 1.200 loài thực vật và nhiều loài động vật quý hiếm như cá chiên, voọc mũi hếch.</li>
+                <li>Khí hậu trong lành, mát mẻ quanh năm, thích hợp cho du lịch sinh thái.</li>
+            </ul>
+            <img src="https://cdn.baobackan.vn/images/704cb9c2056753a2f125885d7e2abfd9143e93c2143cd7efe0c7c91ea779c2695c19ff62809ef9665b21ca967ef0d3bc4b76b6ec81ba0bc8ccfa2961e0d44914e616c68163bbf50a4b0b748a6a2a59481a15153c081d1698efe14741f418300c8724c2bedd64f1c6427c5134fd8ed5f134b3dcd293268f4268fa486866596601/thuyen-ta-cham-cham-vao-ba-be-nui-dung-cheo-leo-ho-lang-im-2-9111-copy-5779.jpg" alt="Phong cảnh thiên nhiên hồ Ba Bể">
+        </section>
+        <section id="hoatdong">
+            <h2>Hoạt động du lịch</h2>
+            <p>Hồ Ba Bể là điểm đến lý tưởng cho những ai yêu thích thiên nhiên và khám phá. Một số hoạt động phổ biến tại đây bao gồm:</p>
+            <ul>
+                <li><b>Đi thuyền trên hồ:</b> Du khách có thể ngồi thuyền độc mộc để khám phá các địa điểm như Đảo Bà Góa, Ao Tiên và thác Đầu Đẳng.</li>
+                <li><b>Khám phá hang động:</b> Một số hang động đẹp như động Hua Mạ, hang Puông mang vẻ đẹp huyền bí.</li>
+                <li><b>Leo núi và trekking:</b> Những cung đường trekking xuyên rừng nguyên sinh là lựa chọn tuyệt vời cho những ai thích phiêu lưu.</li>
+            </ul>
+            <img src="https://homestayhobabe.com/wp-content/uploads/2020/12/2FCBB79C-A0C0-4DC7-929B-7FC00056C6F5.jpeg" alt="Du khách đi thuyền trên hồ Ba Bể">
+        </section>
+        <section id="video">
+            <h2>Video Giới Thiệu Hồ Ba Bể</h2>
+            <video controls>
+                <source src="https://images.baoangiang.com.vn/media/2024/20240214/video/mp4/1707880478_202.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ phát video.
+            </video>
+        </section>
+        <section id="lienhe">
+            <h2>Liên hệ</h2>
+            <p>Để biết thêm thông tin hoặc đặt tour du lịch, vui lòng liên hệ với chúng tôi qua:</p>
+            <p><b>Địa chỉ:</b> Xã Nam Mẫu, Huyện Ba Bể, Tỉnh Bắc Kạn</p>
+            <p><b>Số điện thoại:</b> 0123 456 789</p>
+            <p><b>Email:</b> contact@hobabe.com</p>
+        </section>
+    </main>
+   <footer>
+    <p style="
+        background-color: #007ACC; 
+        color: #fff; 
+        padding: 20px; 
+        margin: 0;
+        font-size: 1.2em;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);">
+             Thanh Thoại-35; Thanh Thùy-36; Uyên Minh-18; Phúc Khang-11
+    </p>
+</footer>
+</body>
+</html>
